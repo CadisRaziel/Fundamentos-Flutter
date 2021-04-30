@@ -2,6 +2,7 @@
 //String
 //Booleano (bool)]
 //dynamic
+//num
 
 main() {
   int n1 = 3;
