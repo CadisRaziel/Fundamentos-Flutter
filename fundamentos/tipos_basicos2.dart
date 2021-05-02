@@ -1,6 +1,10 @@
 // List (indice)
 // set (chave, valor)
 // Map (não é indice)
+// os 3 podem ser generics
+// ou seja eu posso especificalos
+// List<String> , List<Int>, List<Double>
+// Map<String, double>
 
 main() {
   //usando List o que representa ela é o [] (como se fosse um array)
@@ -86,4 +90,22 @@ main() {
   //Observação: Diferente do list o set não aceita repetição(ou seja nomes repetido)
   //ou seja na lista podemos ter exemplo: Daniel, Daniel (ele vai devolver 2 daniel)
   //no set exemplo: Palmeiras, Palmeiras (ele só vai devolver 1 palmeiras)
+
+  //=============================
+
+  //generics
+  //Generic é quando definimos uma List e passamos argumento ou seja
+  //List <String> , List<Double>...
+  List<String> frutas = ['Banana', 'maça'];
+  frutas.add('melao'); //eu só posso adicionar outras STRINGS
+
+  //Resumindo o generic é o parametro que é passado que no caso é String, ou double ou int..
+
+  //lembre-se que map é chave e valor
+  Map<String, double> salarios = {
+    //aqui eu estou dizendo que a chave é string por isso passo ela primeiro e o valor é double
+    'Gerente': 20000.00,
+    'Vendedor': 10000.00,
+    'Estágiario': 600.00
+  };
 }
