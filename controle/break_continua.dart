@@ -12,6 +12,7 @@ main() {
   for (int a = 0; a < 10; a++) {
     if (a % 2 == 0) {
       //ele vai pegar todos numeros pares e vai ignora-los só apresentado os impares
+      //ou seja ele interrompe na hora que chega um numero par e continua ate achar um impar
       continue;
     }
     print(a);

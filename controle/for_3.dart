@@ -1,5 +1,5 @@
 main() {
-  //utilizando o FOR com o MAP
+  //utilizando o FOR IN com o MAP
   //lembre-se definimos o map com um par de {}
   //num = aceita double e numeros inteiros
   Map<String, num> notas = {
