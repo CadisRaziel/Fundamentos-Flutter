@@ -1,0 +1,51 @@
+variaveis nullable = variaveis que aceita o null :
+Object?
+double?
+num?
+int?
+string?
+Iterable?
+bool?
+List?
+
+variaveis não nullable = variaveis que não aceitam null:
+Object
+double
+num
+int
+string
+Iterable
+bool
+List
+
+
+//utilizando o 'Late'
+imagine o seguinte cenario
+eu quero fazer um calculo somente depois com o calcule()
+declarando a variavel int dessa forma ele vai dar erro de null
+
+class inteiro{
+    int umInt;
+
+  inteiro(){
+      umInt = calcule();
+  }
+}
+
+//para nao der erro de null eu faço o Late
+ou seja o late espera que tenha um metodo logo em seguida para que a variavel umInt seja atribuido algum valor
+class inteiro{
+    Late int umInt;
+
+  inteiro(){
+      umInt = calcule();
+  }
+}
+
+ou seja o late precisa que o proximo metodo inicialize essa variavel !!!
+
+
+
+Quando eu declarar uma variavel com ?
+ela poderá ser nulla
+porém não vou consenguir chamar metodos com ela !!! 

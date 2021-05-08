@@ -1,9 +1,9 @@
 class Produto {
   //variaveis de inicialização(lembrar de tirar o ?)
-  int codigo;
-  String nome;
-  double preco;
-  double desconto;
+  int codigo = 0;
+  String nome = 'coloque o nome';
+  double preco = 0.0;
+  double desconto = 0;
 
   //construtor nomeado
   Produto({

@@ -2,7 +2,7 @@ import 'cliente.dart';
 import 'venda_item.dart';
 
 class Venda {
-  Cliente? cliente;
+  Cliente cliente;
 
   //repare que coloquei o VendaItem em uma lista
   //o motivo é que a venda pode ter mais de 1 item e por isso a list cai muito bem aqui
@@ -10,7 +10,7 @@ class Venda {
 
   //construtor nomeado
   Venda({
-    this.cliente,
+    required this.cliente,
     this.itens = const [],
   });
 
@@ -20,7 +20,7 @@ class Venda {
   //esse metodo vai somar todos eles
   double get valotTotal {
     return itens
-        .map((item) => item.preco.toDouble() * item.quantidade)
-        .reduce((vTotal, vAtual) => vTotal.toDouble() + vAtual.toDouble());
+        .map((item) => item.preco * item.quantidade)
+        .reduce((vTotal, vAtual) => vTotal + vAtual);
   }
 }

@@ -8,7 +8,7 @@ main() {
   var vendaItem1 = VendaItem(
       quantidade: 30,
       produto:
-          Produto(codigo: 1, nome: 'Lapis Preto', preco: 6.00, desconto: 0.5));
+          Produto(codigo: 1, nome: 'Lapis Preto', preco: 6.0, desconto: 0.5));
 
   //repare que como criamos construtores nomeados na pasta modelo e nos modulos venda e cliente
   //precisamos passar esses parametros nomeados aqui
