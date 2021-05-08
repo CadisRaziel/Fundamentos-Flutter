@@ -1,7 +1,7 @@
 class Produto {
   //variaveis de inicialização(lembrar de tirar o ?)
   int codigo = 0;
-  String nome = 'coloque o nome';
+  String nome = '';
   double preco = 0.0;
   double desconto = 0;
 
@@ -17,6 +17,6 @@ class Produto {
   double get precoComDesconto {
     //calculando o preço com desconto !
     // 1 = 100% (0.15 = 15%)
-    return (1 - desconto) * preco.toDouble();
+    return (1 - desconto) * preco;
   }
 }

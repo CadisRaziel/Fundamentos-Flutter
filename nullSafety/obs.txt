@@ -49,3 +49,42 @@ ou seja o late precisa que o proximo metodo inicialize essa variavel !!!
 Quando eu declarar uma variavel com ?
 ela poderá ser nulla
 porém não vou consenguir chamar metodos com ela !!! 
+
+//============================================================
+//transformando variaveis nullable em non-nullable :
+//ou seja isso vai deixar as variaveis impossiveis de ser nullas
+
+Manipule valores nulos = ?? if !|as ?.
+
+//se a variavel for nula o ?? coloca o valor 0 nela !!
+//se ela não for nula ele vai colocar diretamente na variavel non-nullable
+exemplo1: int value = intNullable ?? 0;
+
+
+//um exemplo pouco usado utilizando o if
+//se a variavel for nulla ele retorna o 0
+//se a variavel nao for nulla ela retorna o proprio valor da variavel intNullable
+//o if vai dar o mesmo resultado do exemplo1
+//exemplo2:
+int umInt(int? intNullable){
+    if (intNullable == null) {
+        return 0;
+    }
+    return intNullable;
+}
+
+//exemplo3:
+int? intNullable = 1; //colocando o valor 1 eu tenho certeza que essa variavel não é nulla
+int value = intNullable!; //se eu quero colocar a variavel que nao e nula em uma que definitivamente nao é nula basta eu colocar um !
+//ou seja o ! faz com que a expressao do tipo nullable seja tratada como Non-nullable
+//tome cuidado com isso pois da muito erro pois ela é feita em tempo de execução
+//ou seja se ele chegar no intNullable e ele for realmente nullo ele da crash
+//use apenas o ! quando tiver certeza de que o valor não é nulo !!!!
+
+
+
+//exemplo4:
+//se o seuNum() for um nullable e eu quiser transformar ele em um int non-nullable eu uso o 'as int'
+//é parecido com o !
+//esse exemplo mostra como converter um tipo nullable(num?) para o int !!
+return seuNum() as int;
