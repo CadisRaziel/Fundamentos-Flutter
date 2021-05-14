@@ -29,6 +29,7 @@ main() {
   print(info);
 
   //podemos fazer isso caso a varaivel for nulla
+  //é tipo um operador ternario usando nullSafety
   String? nome;
   String info2 = nome ?? "não informado";
   print(info2);

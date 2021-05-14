@@ -87,6 +87,8 @@ class DataSimples {
 main() {
   //repare que eu posso passar as datas diretamente na instancia !!
   var dataAniversario = new DataSimples(01, 02, 2021);
+
+  //sem o construtor eu passaria assim \/
   // dataAniversario.dia = 3;
   // dataAniversario.mes = 05;
   // dataAniversario.ano = 2021;
