@@ -33,7 +33,7 @@ ain() {
   print(nomes.contains('Vitor'));
 
   //posso armazenar objetos
-  List<Pessoa> pessoas = List();
+  List<Pessoa> pessoas = [];
   pessoas.add(Pessoa("Mari", 30));
 
   //com isso vai apresentar todas os nomes que eu inclui no objeto
